@@ -17,7 +17,7 @@ function csv2json() {
         var sheetName = file.getName();
         sheetName = sheetName.substr(0,sheetName.length-4);
         
-        var sh = ss().getSheetByName(sheetName);
+        var sh = ss.getSheetByName(sheetName);
         if(sh == null)
         {
           ss.insertSheet(sheetName);
